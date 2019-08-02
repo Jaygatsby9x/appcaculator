@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form>
+    <input type="number" id="noa">
+    <input type="number" id="nob"><br>
+    <button type="button" onclick="cong()">Addition(+)</button>
+    <button type="button" onclick="tru()">Addition(-)</button>
+    <button type="button" onclick="nhan()">Mutiplication(X)</button>
+    <button type="button" onclick="chia()">Division(/)</button>
+</form>
+<script>
+    function cong() {
+        let num1 = Number(document.getElementById("noa").value);
+        let num2 = Number(document.getElementById("nob").value);
+        let cong = num1 + num2;
+        document.write(cong);
+    }
+    function tru() {
+        let num1 = Number(document.getElementById("noa").value);
+        let num2 = Number(document.getElementById("nob").value);
+        let tru = num1 - num2;
+        document.write(tru);
+    }
+    function nhan() {
+        let num1 = Number(document.getElementById("noa").value);
+        let num2 = Number(document.getElementById("nob").value);
+        let nhan = num1 * num2;
+        document.write(nhan);
+    }
+    function chia() {
+        let num1 = Number(document.getElementById("noa").value);
+        let num2 = Number(document.getElementById("nob").value);
+        let chia = num1 / num2;
+        document.write(chia);
+    }
+</script>
+</body>
+</html>
